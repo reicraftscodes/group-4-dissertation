@@ -1,44 +1,33 @@
- image: python:3.8-buster
+stages:
+  - deploy
 
-    # Change pip's cache directory to be inside the project directory since we can
-    # only cache local items.
-    variables:
-      PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
-      APT_DIR: "$CI_PROJECT_DIR/.cache/apt"
-      APT_STATE_LISTS: "$APT_DIR/lists"
-      APT_CACHE_ARCHIVES: "$APT_DIR/archives"
-
-    # Pip's cache doesn't store the python packages
-    # https://pip.pypa.io/en/stable/topics/caching/
-    #
-    # If you want to also cache the installed packages, you have to install
-    # them in a virtualenv and cache it as well.
-    cache:
-      paths:
-        - .cache/pip
-        - .cache/apt
-        - venv/
-
-    before_script:
-      # setup python for caching
-      - python --version  # For debugging
-      - pip install virtualenv
-      - virtualenv venv
-      - source venv/bin/activate
-      # setup apt for caching
-      - printf "dir::state::lists    ${APT_STATE_LISTS};\ndir::cache::archives    ${APT_CACHE_ARCHIVES};\n" > /etc/apt/apt.conf
-      - mkdir -p "${APT_STATE_LISTS}/partial" && mkdir -p "${APT_CACHE_ARCHIVES}/partial"
-      - apt-get update -y && apt-get install -y jq
-
-    stages:
-      - deploy
-
-    deploy_on_prod:
-      stage: deploy
-      tags:
-        - python
-            - prod
-            - ipynb
-      script:
-        - pip install -r requirements.txt
-        - source deploy.sh
+deploy_on_prod:
+  stage: deploy
+  image: python:3.8-buster
+  tags:
+    - python
+    - prod
+    - ipynb
+  variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+    APT_DIR: "$CI_PROJECT_DIR/.cache/apt"
+    APT_STATE_LISTS: "$APT_DIR/lists"
+    APT_CACHE_ARCHIVES: "$APT_DIR/archives"
+  cache:
+    paths:
+      - .cache/pip
+      - .cache/apt
+      - venv/
+  before_script:
+    - python --version
+    - pip install virtualenv
+    - virtualenv venv
+    - source venv/bin/activate
+    - printf "dir::state::lists    ${APT_STATE_LISTS};\ndir::cache::archives    ${APT_CACHE_ARCHIVES};\n" > /etc/apt/apt.conf
+    - mkdir -p "${APT_STATE_LISTS}/partial" && mkdir -p "${APT_CACHE_ARCHIVES}/partial"
+    - apt-get update -y && apt-get install -y jq
+  script:
+    - pip install -r requirements.txt
+    - echo "Running model pipeline"
+    - python facial_emotional_recognition.py
+    - echo "Deployment complete"
