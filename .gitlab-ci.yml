@@ -1,14 +1,22 @@
-run_notebook:
+stages:
+  - test
+
+test_runner:
   stage: test
-  tags:
-    - python
-  image: python:3.11
-  before_script:
-    - pip install --upgrade pip
-    - pip install -r requirements.txt
   script:
-    - papermill facial_emotional_recognition.ipynb output.ipynb
-  artifacts:
-    paths:
-      - output.ipynb
-    expire_in: never
+    - echo "Runner is working!"
+
+#run_notebook:
+#  stage: test
+#  tags:
+#    - python
+#  image: python:3.11
+#  before_script:
+#    - pip install --upgrade pip
+#    - pip install -r requirements.txt
+#  script:
+#    - papermill facial_emotional_recognition.ipynb output.ipynb
+#  artifacts:
+#    paths:
+#      - output.ipynb
+#    expire_in: never
