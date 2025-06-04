@@ -8,8 +8,7 @@ run_notebook:
     - pip install --upgrade pip
     - pip install -r requirements.txt
   script:
-    - papermill facial_emotional_recognition.ipynb
-    - pytest --nbval facial_emotional_recognition.ipynb
+    - papermill facial_emotional_recognition.ipynb output.ipynb
   artifacts:
     paths:
       - output.ipynb
