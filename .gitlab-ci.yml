@@ -1,0 +1,16 @@
+stages:
+  - test
+
+run_notebook:
+  stage: test
+  image: python:3.11
+  before_script:
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+  script:
+    - papermill facial_emotional_recognition.ipynb
+    - pytest --nbval facial_emotional_recognition.ipynb
+  artifacts:
+    paths:
+      - output.ipynb
+    expire_in: never
