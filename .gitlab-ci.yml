@@ -1,33 +1,26 @@
-stages:
-  - deploy
+# .gitlab-ci.yml
+image: python:3.11
 
-deploy_on_prod:
-  stage: deploy
-  image: python:3.8-buster
-  tags:
-    - python
-    - prod
-    - ipynb
-  variables:
-    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
-    APT_DIR: "$CI_PROJECT_DIR/.cache/apt"
-    APT_STATE_LISTS: "$APT_DIR/lists"
-    APT_CACHE_ARCHIVES: "$APT_DIR/archives"
-  cache:
-    paths:
-      - .cache/pip
-      - .cache/apt
-      - venv/
-  before_script:
-    - python --version
-    - pip install virtualenv
-    - virtualenv venv
-    - source venv/bin/activate
-    - printf "dir::state::lists    ${APT_STATE_LISTS};\ndir::cache::archives    ${APT_CACHE_ARCHIVES};\n" > /etc/apt/apt.conf
-    - mkdir -p "${APT_STATE_LISTS}/partial" && mkdir -p "${APT_CACHE_ARCHIVES}/partial"
-    - apt-get update -y && apt-get install -y jq
+stages:
+  - test
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+
+before_script:
+  - pip install --upgrade pip
+  - pip install numpy pandas scikit-learn matplotlib seaborn papermill nbval pytest
+
+test_notebook:
+  stage: test
   script:
-    - pip install -r requirements.txt
-    - echo "Running model pipeline"
-    - python facial_emotional_recognition.py
-    - echo "Deployment complete"
+    - pytest --nbval facial_emotional_recognition.ipynb
+    - python -c "import nbformat; import ast; nb = nbformat.read('facial_emotional_recognition.ipynb', as_version=4); print('Notebook validation passed')"
+  only:
+    changes:
+      - "facial_emotional_recognition.ipynb"
+      - "requirements.txt"
