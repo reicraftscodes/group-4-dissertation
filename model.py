@@ -8,6 +8,11 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+"""
+    Author: May Sanejo
+    Date: 05-07-2025
+    Description:  Model architectures (ViT, Early/Late Fusion).
+"""
 
 class ViTForFER(nn.Module):
     """
