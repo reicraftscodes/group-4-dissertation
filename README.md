@@ -99,7 +99,7 @@ Data/                 # download and unzip from https://drive.google.com/drive/f
 ## Training
 
 ### Configuration
-Edit the `config` dictionary in `train.py` to customize training parameters:
+Edit the `config` dictionary in `train.py` to customise training parameters:
 
 ```python
 config = {
@@ -116,10 +116,19 @@ config = {
 ```
 
 ### Training Commands
+Ongoing..
+This is where you run the training by executing the following command
+
 
 #### RGB-only Mode
+```bash
+python train.py  # Set config['mode'] = 'rgb'
+```
 
 #### Thermal-only Mode
+```bash
+python train.py  # Set config['mode'] = 'thermal'
+```
 
 
 
