@@ -425,7 +425,7 @@ def analyze_multimodal_dataset(data_dir: str, use_augmented: bool = False):
 
 if __name__ == "__main__":
     # Example usage
-    data_dir = "data/vit/Data"
+    data_dir = "../vit/vit/data/vit/Data"
     
     # Analyze dataset
     analyze_multimodal_dataset(data_dir, use_augmented=True)

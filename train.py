@@ -510,7 +510,7 @@ def main():
     config = {
         'data_dir': 'data/vit/Data',
         'output_dir': './experiments',
-        'mode': 'combined',  # 'rgb', 'thermal', or 'combined'
+        'mode': 'rgb',  # 'rgb', 'thermal', or 'combined'
         'fusion_strategy': 'late',  # 'early' or 'late' (for combined mode)
         'fusion_type': 'concat',  # 'concat', 'add', or 'attention'
         'fusion_layer': 'feature',  # 'feature' or 'prediction' (for late fusion)
@@ -523,8 +523,8 @@ def main():
         'use_gradient_checkpointing': False,
         
         # Training parameters
-        'batch_size': 32,
-        'num_epochs': 30,
+        'batch_size': 32, # Reduce batch size to 16 but 32 ideally good for ViT
+        'num_epochs': 30, # 30 for good starting point for training efficiency.
         'learning_rate': 5e-5,
         'weight_decay': 0.01,
         'warmup_steps': 500,

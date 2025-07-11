@@ -108,8 +108,8 @@ config = {
     'fusion_strategy': 'early',  # 'early' or 'late' (for combined mode)
     'fusion_type': 'concat',  # 'concat', 'add', or 'attention'
     'fusion_layer': 'feature',  # 'feature' or 'prediction' (for late fusion)
-    'batch_size': 32,
-    'num_epochs': 30,
+    'batch_size': 32, # ideal batch size for ViT
+    'num_epochs': 30, #  30 for good starting point for training efficiency.
     'learning_rate': 5e-5,
     # ... other parameters
 }
