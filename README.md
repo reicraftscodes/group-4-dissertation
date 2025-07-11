@@ -1,4 +1,4 @@
-# Multimodal Vision Transformer for Facial Expression Recognition
+# Vision Transformer for FER Documentation
 
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
 
@@ -53,6 +53,7 @@ Data/
 - `id`: Unique identifier
 - `suffix`: Additional identifier (e.g., KTFE)
 
+# Running to local machine
 ## Installation
 
 ### Prerequisites
@@ -200,7 +201,7 @@ python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 
 
 3. **Slow Training**
    - Increase `num_workers` in data loading
-   - Use smaller image size (e.g., 224 � 192)
+   - Use smaller image size (e.g., 224, 192)
 
 ### Debug Commands
 ```bash
@@ -216,17 +217,17 @@ nvidia-smi
 
 ### Running to Collab Instruction
 
-Step 1: Upload your source code to Google drive (Do not zipped source code)
+Step 1: Upload the source code from here to your Google Drive (Do not zipped source code)
 
 Step 2: Upload Data.zip to your working directory
 
-Step 3: Locate Main_Collab_ViT.ipynb
+Step 3: Locate Main_Collab_ViT.ipynb from your working directory
 ```
 1. Go to Collab, create new notebook 
 2. Select File -> Locate in Drive -> Then find Google directory where you save all your source code
 3. Select Main_Collab_ViT.ipynb from your Google Drive folder to open
 ```
-step 4: select GPU runtime 
+step 4: Select GPU runtime 
 ```
 Click runtime → change runtime type → Click to T4 GPU → Save
 ```
