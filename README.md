@@ -119,7 +119,7 @@ config = {
 Ongoing..
 This is where you run the training by executing the following command
 
-
+### Individual
 #### RGB-only Mode
 ```bash
 python train.py  # Set config['mode'] = 'rgb'
@@ -130,6 +130,16 @@ python train.py  # Set config['mode'] = 'rgb'
 python train.py  # Set config['mode'] = 'thermal'
 ```
 
+### Combined Mode
+#### Combined Mode with Early Fusion
+```bash
+python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 'early'
+```
+
+#### Combined Mode with Late Fusion
+```bash
+python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 'late'
+```
 
 
 ### Fusion Strategies
