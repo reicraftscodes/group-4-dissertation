@@ -214,8 +214,22 @@ python model.py
 nvidia-smi
 ```
 
+### Running to Collab Instruction
 
+Step 1: Upload your source code to Google drive (Do not zipped source code)
 
+Step 2: Upload Data.zip to your working directory
+
+Step 3: Locate Main_Collab_ViT.ipynb
+```
+1. Go to Collab, create new notebook 
+2. Select File -> Locate in Drive -> Then find Google directory where you save all your source code
+3. Select Main_Collab_ViT.ipynb from your Google Drive folder to open
+```
+step 4: select GPU runtime 
+```
+Click runtime → change runtime type → Click to T4 GPU → Save
+```
 
 
 
