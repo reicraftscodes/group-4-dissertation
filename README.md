@@ -227,11 +227,13 @@ Step 3: Locate Main_Collab_ViT.ipynb from your working directory
 2. Select File -> Locate in Drive -> Then find Google directory where you save all your source code
 3. Select Main_Collab_ViT.ipynb from your Google Drive folder to open
 ```
-step 4: Select GPU runtime 
+Step 4: Select GPU runtime
 ```
 Click runtime → change runtime type → Click to T4 GPU → Save
 ```
+Step 5: Run Code block
 
+Before running each code block, please do make sure to edit the config from main() to customise training parameters
 
 
 
