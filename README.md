@@ -235,6 +235,6 @@ Step 5: Run Code block
 
 Before running each code block, please do make sure to edit the config from main() to customise training parameters
 
-
+Step 6: Once everyone successfully runs it and you have results, save a copy of the notebook
 
 
