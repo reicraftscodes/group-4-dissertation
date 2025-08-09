@@ -215,9 +215,13 @@ python model.py
 nvidia-smi
 ```
 
-### Running to Collab Instruction
+___
 
-Step 1: Upload the source code from here to your Google Drive (Do not zipped source code)
+## Running to Collab 
+
+Follow this Step by Steps Instruction
+
+Step 1:Upload the source code from here to your Google Drive (Do not zipped source code)
 
 Step 2: Upload Data.zip to your working directory
 
@@ -233,8 +237,11 @@ Click runtime → change runtime type → Click to T4 GPU → Save
 ```
 Step 5: Run Code block
 
-Before running each code block, please do make sure to edit the config from main() to customise training parameters
+Before running each code block, please do make sure to edit the config from main() to customise training parameters.
 
-Step 6: Once everyone successfully runs it and you have results, save a copy of the notebook
+Step 6: Getting all results
 
+Once everything successfully runs, save a copy of the notebook. 
+
+All the training results are in the ```experiments``` folder
 
