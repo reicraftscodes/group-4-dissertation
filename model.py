@@ -10,8 +10,10 @@ logger = logging.getLogger(__name__)
 
 """
     Author: May Sanejo
-    Date: 05-07-2025
     Description:  Model architectures (ViT, Early/Late Fusion).
+    
+    Some code adapted from Hugging Face Transformers ViT documentation:
+    https://huggingface.co/docs/transformers/en/model_doc/vit
 """
 
 class ViTForFER(nn.Module):
