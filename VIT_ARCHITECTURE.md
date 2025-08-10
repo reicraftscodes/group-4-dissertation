@@ -1,7 +1,24 @@
 # ViT Architecture Documentation
 
-ViT Architecture Overview
- 
+### Table of Contents
+
+- [Overview](#overview)
+- [Single Modal ViT (ViTForFER)](#1-single-modal-vit-vitforfer)
+- [Early Fusion ViT (EarlyFusionViT)](#2-early-fusion-vit-earlyfusionvit)
+- [Late Fusion ViT (LateFusionViT)](#3-late-fusion-vit-latefusionvit)
+- [How Fine-tuning Works](#how-fine-tuning-works-)
+- [Usage / Examples](#usage-examples)
+
+___ 
+
+
+
+<a id="overview"></a>
+### Overview
+A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
+
+
+<a id="single-modal"></a>
 ###  1. Single Modal ViT (ViTForFER)
  
 - Uses pre-trained google/vit-base-patch16-224-in21k
@@ -9,13 +26,15 @@ ViT Architecture Overview
 - Custom classifier: 2-layer MLP with LayerNorm and dropout
 - Input: 224x224 RGB or thermal images
  
+<a id="early-fusion"></a>
 ### 2. Early Fusion ViT (EarlyFusionViT)
  
 - Combines RGB + thermal at input level
 - Concat mode: 6-channel input (RGB=3 + Thermal=3)
 - Add mode: Element-wise addition of RGB and thermal
 - Modifies patch embedding layer for multi-channel input
- 
+
+<a id="late-fusion"></a>
 ### 3. Late Fusion ViT (LateFusionViT)
  
 - Separate ViT encoders for RGB and thermal
@@ -24,7 +43,8 @@ ViT Architecture Overview
 
 ___ 
 
-##  How Fine-tuning Works
+<a id="how-fine-tuning-works"></a>
+##  How Fine-tuning Works 
  
 Fine-tuning Strategies
  
@@ -63,6 +83,7 @@ Memory Optimization:
 - Supports freezing backbone to save compute
 ___ 
 
+<a id="usage-examples"></a>
 ## Usage/Examples
  
 1. Single RGB Model
@@ -112,6 +133,7 @@ ___
    )
    ```
 
+<a id="fine-tuning-process"></a>
 ##  Fine-tuning Process
 
 1. Load pre-trained weights from HuggingFace
