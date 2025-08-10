@@ -1,9 +1,21 @@
 # Vision Transformer for FER Documentation
 
+### Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Datasets](#dataset)
+- [Installation](#installation)
+- [Training & Configuration](#training)
+- [Troubleshooting](#troubleshooting)
+- [Running to Google Collab](#run-to-collab)
+
+
+<a id="overview"></a>
+# Overview
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
 
+<a id="features"></a>
 ## Features
-
 - **Multi-modal Support**: RGB-only, Thermal-only, and Combined (RGB+Thermal) modes
 - **Fusion Strategies**: Early fusion (input-level) and Late fusion (feature/prediction-level)
 - **Fusion Types**: Concatenation, Addition, and Attention-based fusion
@@ -13,6 +25,7 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
 - **Experiment Tracking**: TensorBoard and WandB support
 - **Class Imbalance Handling**: Automatic class weight calculation
 
+<a id="dataset"></a>
 ## Dataset
 
 ### Supported Emotions
@@ -53,9 +66,11 @@ Data/
 - `id`: Unique identifier
 - `suffix`: Additional identifier (e.g., KTFE)
 
-# Running to local machine
-## Installation
+<a id="installation"></a>
+# Installation
 
+
+##  Running to local machine
 ### Prerequisites
 - Python 3.8+
 - CUDA-compatible GPU (recommended)
@@ -97,6 +112,7 @@ experiments/          # all result training
 Data/                 # download and unzip from https://drive.google.com/drive/folders/1hBpFWxtlbHpPX9DnQ5x9j9-gvyaLznuz?usp=sharing
 ```
 
+<a id="training"></a>
 ## Training
 
 ### Configuration
@@ -186,6 +202,8 @@ python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 
 - `early_stopping_patience`: Patience epochs (10)
 - `early_stopping_min_delta`: Minimum improvement (0.001)
 
+
+<a id="troubleshooting"></a>
 ## Troubleshooting
 
 ### Common Issues
@@ -217,6 +235,7 @@ nvidia-smi
 
 ___
 
+<a id="run-to-collab"></a>
 ## Running to Collab 
 
 Follow this Step by Steps Instruction
