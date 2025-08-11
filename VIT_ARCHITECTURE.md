@@ -3,10 +3,10 @@
 ### Table of Contents
 
 - [Overview](#overview)
-- [Single Modal ViT (ViTForFER)](#1-single-modal-vit-vitforfer)
-- [Early Fusion ViT (EarlyFusionViT)](#2-early-fusion-vit-earlyfusionvit)
+- [Single Modal ViT (ViTForFER)](#single-modal)
+- [Early Fusion ViT (EarlyFusionViT)](#early-fusion)
   - [Fusion Type](#early-fusion-types)
-- [Late Fusion ViT (LateFusionViT)](#3-late-fusion-vit-latefusionvit)
+- [Late Fusion ViT (LateFusionViT)](#late-fusion)
   - [Fusion Layer](#late-fusion-layer)
 - [How Fine-tuning Works](#how-fine-tuning-works-)
 - [Usage / Examples](#usage-examples)
