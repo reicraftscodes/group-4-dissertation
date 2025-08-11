@@ -7,7 +7,7 @@
 - [Installation](#installation)
 - [Training & Configuration](#training)
 - [Troubleshooting](#troubleshooting)
-- [Running to Google Collab](#running-to-collab-)
+- [Run Google Collab](#run-to-google-collab)
 
 
 
@@ -235,7 +235,7 @@ nvidia-smi
 
 ___
 
-## Running to Collab 
+## Run to Google Collab
 
 Follow this Step by Steps Instruction
 
