@@ -3,24 +3,22 @@
 ### Table of Contents
 
 - [Overview](#overview)
-- [Single Modal ViT (ViTForFER)](#single-modal)
-- [Early Fusion ViT (EarlyFusionViT)](#early-fusion)
-  - [Fusion Type](#early-fusion-types)
-- [Late Fusion ViT (LateFusionViT)](#late-fusion)
-  - [Fusion Layer](#late-fusion-layer)
+- [Single Modal ViT (ViTForFER)](#single-modal-vit-vitforfer)
+- [Early Fusion ViT (EarlyFusionViT)](#early-fusion-vit-earlyfusionvit)
+  - [Fusion Type](#fusion-types)
+- [Late Fusion ViT (LateFusionViT)](#late-fusion-vit-latefusionvit)
+  - [Fusion Layer](#fusion-layer-details)
 - [How Fine-tuning Works](#how-fine-tuning-works-)
-- [Usage / Examples](#usage-examples)
+- [Usage / Examples](#usageexamples)
 
 ___ 
 
 
 
-<a id="overview"></a>
 ### Overview
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
 
 
-<a id="single-modal"></a>
 # Single Modal ViT (ViTForFER)
  Architecture Overview
 
@@ -29,7 +27,7 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
 - Custom classifier: 2-layer MLP with LayerNorm and dropout
 - Input: 224x224 RGB or thermal images
  
-<a id="early-fusion"></a>
+
 # Early Fusion ViT (EarlyFusionViT)
 Architecture Overview
 - Combines RGB + thermal at input level
@@ -39,7 +37,6 @@ Architecture Overview
 
 In Early Fusion, RGB and thermal images are merged before entering the ViT encoder. There are three common fusion types:
 
-<a id="early-fusion-types"></a>
 ### Fusion Types
    - **Concat**  
      Combines RGB and thermal channels by concatenating them, resulting in a 6-channel input (3 RGB + 3 thermal).  
@@ -57,7 +54,6 @@ In Early Fusion, RGB and thermal images are merged before entering the ViT encod
    
 
 
-<a id="late-fusion"></a>
 # Late Fusion ViT (LateFusionViT)
 
 Architecture Overview
@@ -67,7 +63,6 @@ Architecture Overview
 - Fusion strategies control how information from both modalities is merged.
   - The fusion type (e.g., concat, add, attention) defines how features or predictions are combined adaptively.
 
-<a id="late-fusion-layer"></a>
 ### Fusion Layer Details
 - **Feature Fusion**: Combines the feature outputs from each modality’s ViT encoder before passing to a shared classifier.
 
@@ -75,7 +70,6 @@ Architecture Overview
 - **Prediction Fusion**: Applies separate classifiers on each modality’s features, then combines the predictions (e.g., averaging or weighted sum).
 ___ 
 
-<a id="how-fine-tuning-works"></a>
 ##  How Fine-tuning Works 
  
 Fine-tuning Strategies
@@ -115,7 +109,6 @@ Memory Optimization:
 - Supports freezing backbone to save compute
 ___ 
 
-<a id="usage-examples"></a>
 ## Usage/Examples
  
 1. Single RGB Model
@@ -165,7 +158,6 @@ ___
    )
    ```
 
-<a id="fine-tuning-process"></a>
 ##  Fine-tuning Process
 
 1. Load pre-trained weights from HuggingFace
