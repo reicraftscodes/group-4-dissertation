@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Single Modal ViT (ViTForFER)](#1-single-modal-vit-vitforfer)
 - [Early Fusion ViT (EarlyFusionViT)](#2-early-fusion-vit-earlyfusionvit)
+  - [Fusion Type](#early-fusion-types)
 - [Late Fusion ViT (LateFusionViT)](#3-late-fusion-vit-latefusionvit)
 - [How Fine-tuning Works](#how-fine-tuning-works-)
 - [Usage / Examples](#usage-examples)
@@ -19,7 +20,7 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
 
 
 <a id="single-modal"></a>
-###  1. Single Modal ViT (ViTForFER)
+# Single Modal ViT (ViTForFER)
  
 - Uses pre-trained google/vit-base-patch16-224-in21k
 - Architecture: 12 layers, 768 hidden size, 12 attention heads
@@ -27,15 +28,35 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
 - Input: 224x224 RGB or thermal images
  
 <a id="early-fusion"></a>
-### 2. Early Fusion ViT (EarlyFusionViT)
- 
+# Early Fusion ViT (EarlyFusionViT)
+
 - Combines RGB + thermal at input level
 - Concat mode: 6-channel input (RGB=3 + Thermal=3)
 - Add mode: Element-wise addition of RGB and thermal
 - Modifies patch embedding layer for multi-channel input
 
+In Early Fusion, RGB and thermal images are merged before entering the ViT encoder. There are three common fusion types:
+
+<a id="early-fusion-types"></a>
+### Fusion Types
+   - **Concat**  
+     Combines RGB and thermal channels by concatenating them, resulting in a 6-channel input (3 RGB + 3 thermal).  
+     The patch embedding layer is modified to handle this multi-channel input, allowing the model to learn joint features from both modalities right from the start.
+   
+
+   - **Add**  
+     Combines RGB and thermal images by adding their pixel values element-wise, producing a single 3-channel image.  
+     The model processes this fused image as normal, blending information from both modalities at the input level.
+   
+
+   - **Attention**  
+     Uses an attention mechanism to fuse RGB and thermal inputs dynamically at the input token level.  
+     This lets the model learn how much weight to assign each modality for every patch, improving fusion by focusing on the most informative features.
+   
+
+
 <a id="late-fusion"></a>
-### 3. Late Fusion ViT (LateFusionViT)
+# Late Fusion ViT (LateFusionViT)
  
 - Separate ViT encoders for RGB and thermal
 - Feature fusion: Combines features before classification
