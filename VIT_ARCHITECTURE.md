@@ -59,8 +59,9 @@ In Early Fusion, RGB and thermal images are merged before entering the ViT encod
 # Late Fusion ViT (LateFusionViT)
  
 - Separate ViT encoders for RGB and thermal
-- Feature fusion: Combines features before classification
-- Prediction fusion: Separate classifiers, then combine predictions
+- Fusion occurs after encoding, either by combining features or predictions.
+  - Feature fusion: Combines features before classification
+  - Prediction fusion: Separate classifiers, then combine predictions
 
 ___ 
 
