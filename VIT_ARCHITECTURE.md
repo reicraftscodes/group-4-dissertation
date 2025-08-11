@@ -174,3 +174,10 @@ ___
 4. Use different learning rates for backbone vs classifier
 5. Apply cosine scheduler with warmup
 6. Gradually unfreeze layers if needed
+
+___ 
+
+# Contributors
+- Fiorella Scarpino (QA Testing & Validation, Developer)
+- May Sanejo (Developer)
+- Soumia Kouadri (Research & Review)

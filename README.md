@@ -264,3 +264,9 @@ Once everything successfully runs, save a copy of the notebook.
 
 All the training results are in the ```experiments``` folder
 
+___ 
+
+# Authors
+- Fiorella Scarpino (21010043)
+- May Sanejo (15006280)
+- Soumia Kouadri (24058628)
