@@ -7,6 +7,7 @@
 - [Early Fusion ViT (EarlyFusionViT)](#2-early-fusion-vit-earlyfusionvit)
   - [Fusion Type](#early-fusion-types)
 - [Late Fusion ViT (LateFusionViT)](#3-late-fusion-vit-latefusionvit)
+  - [Fusion Layer](#late-fusion-layer)
 - [How Fine-tuning Works](#how-fine-tuning-works-)
 - [Usage / Examples](#usage-examples)
 
@@ -21,7 +22,8 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
 
 <a id="single-modal"></a>
 # Single Modal ViT (ViTForFER)
- 
+ Architecture Overview
+
 - Uses pre-trained google/vit-base-patch16-224-in21k
 - Architecture: 12 layers, 768 hidden size, 12 attention heads
 - Custom classifier: 2-layer MLP with LayerNorm and dropout
@@ -29,7 +31,7 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
  
 <a id="early-fusion"></a>
 # Early Fusion ViT (EarlyFusionViT)
-
+Architecture Overview
 - Combines RGB + thermal at input level
 - Concat mode: 6-channel input (RGB=3 + Thermal=3)
 - Add mode: Element-wise addition of RGB and thermal
@@ -57,12 +59,20 @@ In Early Fusion, RGB and thermal images are merged before entering the ViT encod
 
 <a id="late-fusion"></a>
 # Late Fusion ViT (LateFusionViT)
- 
-- Separate ViT encoders for RGB and thermal
-- Fusion occurs after encoding, either by combining features or predictions.
-  - Feature fusion: Combines features before classification
-  - Prediction fusion: Separate classifiers, then combine predictions
 
+Architecture Overview
+
+- Separate encoders process RGB and thermal inputs independently.
+- Fusion happens either at the feature level (combining encoded features) or prediction level (combining outputs of separate classifiers).
+- Fusion strategies control how information from both modalities is merged.
+  - The fusion type (e.g., concat, add, attention) defines how features or predictions are combined adaptively.
+
+<a id="late-fusion-layer"></a>
+### Fusion Layer Details
+- **Feature Fusion**: Combines the feature outputs from each modality’s ViT encoder before passing to a shared classifier.
+
+
+- **Prediction Fusion**: Applies separate classifiers on each modality’s features, then combines the predictions (e.g., averaging or weighted sum).
 ___ 
 
 <a id="how-fine-tuning-works"></a>
@@ -138,7 +148,7 @@ ___
    Late fusion (separate encoders)
    ```
    model = create_multimodal_vit_model(
-   mode='combined',
+   mode='combined', 
    fusion_strategy='late',
    fusion_type='attention',
    fusion_layer='feature'
