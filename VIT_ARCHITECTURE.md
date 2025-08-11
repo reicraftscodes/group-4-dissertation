@@ -68,7 +68,7 @@ Architecture Overview
 
 
 - **Prediction Fusion**: Applies separate classifiers on each modality’s features, then combines the predictions (e.g., averaging or weighted sum).
-___ 
+
 
 ##  How Fine-tuning Works 
  
