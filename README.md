@@ -232,7 +232,7 @@ Follow this Step by Steps Instruction
 3. Select Main_Collab_ViT.ipynb from your Google Drive folder to open
 ```
 
-5. Select GPU runtime (A100 GPU only available on Collab Pro subscription)
+5. Select GPU runtime (For this experiment, we are using the ```L4 GPU```, which is only available with a Colab Pro subscription.)
 ```
 Click runtime → change runtime type → Click to T4 GPU → Save
 ```
