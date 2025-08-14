@@ -1,4 +1,8 @@
-# Vision Transformer for FER Documentation
+# Vision Transformer (ViT) for Facial Expression Recognition (FER) Documentation
+
+<p style="text-align:center;">
+  <img src="cover/cover.png" alt="Cover Image" width="600"/>
+</p>
 
 ### Table of Contents
 - [Overview](#overview)
