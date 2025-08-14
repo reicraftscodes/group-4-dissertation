@@ -25,7 +25,7 @@ The complete architecture of the Vision Transformer can be found in [VIT_ARCHITE
 - **Fusion Strategies**: Early fusion (input-level) and Late fusion (feature/prediction-level)
 - **Fusion Types**: Concatenation, Addition, and Attention-based fusion
 - **Pre-trained Models**: Built on HuggingFace ViT with fine-tuning capabilities
-- **Comprehensive Evaluation**: Detailed metrics, confusion matrices, and visualizations
+- **Comprehensive Evaluation**: Detailed metrics, confusion matrices, and visualisations
 - **Early Stopping**: Prevents overfitting with configurable patience
 - **Experiment Tracking**: TensorBoard and WandB support
 - **Class Imbalance Handling**: Automatic class weight calculation
@@ -109,7 +109,7 @@ train.py              # Main training script
 model.py              # Model architectures (ViT, Early/Late Fusion)
 dataset.py            # Dataset loading and preprocessing
 utils.py              # Utilities (metrics, early stopping, etc.)
-evaluate.py           # Model evaluation and visualization
+evaluate.py           # Model evaluation and visualisation
 quick_inference.py    # Single image inference
 requirements.txt      # Dependencies
 README.md 
@@ -157,7 +157,7 @@ Combined Mode with **Early Fusion**
 python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 'early'
 ```
 
-Combined Mode with Late **Fusion**
+Combined Mode with **Late Fusion**
 ```bash
 python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 'late'
 ```
