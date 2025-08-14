@@ -37,8 +37,6 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
 
 
 # Single Modal ViT (ViTForFER)
- Architecture Overview
-
 - Uses pre-trained google/vit-base-patch16-224-in21k
 - Architecture: 12 layers, 768 hidden size, 12 attention heads
 - Custom classifier: 2-layer MLP with LayerNorm and dropout
@@ -46,7 +44,6 @@ A comprehensive implementation of Vision Transformer (ViT) for Facial Expression
  
 
 # Early Fusion ViT (EarlyFusionViT)
-Architecture Overview
 - Combines RGB + thermal at input level
 - Concat mode: 6-channel input (RGB=3 + Thermal=3)
 - Add mode: Element-wise addition of RGB and thermal
@@ -72,8 +69,6 @@ In Early Fusion, RGB and thermal images are merged before entering the ViT encod
 
 
 # Late Fusion ViT (LateFusionViT)
-
-Architecture Overview
 
 - Separate encoders process RGB and thermal inputs independently.
 - Fusion happens either at the feature level (combining encoded features) or prediction level (combining outputs of separate classifiers).

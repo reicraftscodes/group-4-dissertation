@@ -238,14 +238,12 @@ Click runtime → change runtime type → Click to T4 GPU → Save
 ```
 5. Run Code block
 
-    Before running each code block, please do make sure to edit the config first from main() to customise training parameters.
+    Before running each code block, please do make sure to edit the config first from ```main()``` to customise training parameters.
 
 
 6. Getting all results
 
-    Once everything successfully runs, save a copy of the notebook.
-
-    All the training results are in the ```experiments``` folder.
+    Once everything successfully runs, save a copy of the notebook. All the training results are in the ```experiments``` folder.
 
 
 # Authors
