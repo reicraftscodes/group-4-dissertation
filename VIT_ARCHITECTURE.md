@@ -118,13 +118,12 @@ nn.Linear(384, 7) # Output 7 emotions
 ```
  
 Different Learning Rates:
-- Backbone: learning_rate * 0.1 (lower for pre-trained weights)
-- Classifier: learning_rate (higher for new weights)
+- Backbone: learning_rate * 0.1 (lower for pre-trained weights).
+- Classifier: learning_rate (higher for new weights).
  
-Memory Optimization:
-- Gradient checkpointing to reduce memory usage
-- Supports freezing backbone to save compute
-___ 
+Memory Optimisation:
+- Gradient checkpointing to reduce memory usage.
+- Supports freezing backbone to save compute.
 
 ## Usage/Examples
  
@@ -177,12 +176,12 @@ ___
 
 ##  Fine-tuning Process
 
-1. Load pre-trained weights from HuggingFace
-2. Replace classifier head with custom 7-class head
-3. Optionally freeze backbone for initial training
-4. Use different learning rates for backbone vs classifier
-5. Apply cosine scheduler with warmup
-6. Gradually unfreeze layers if needed
+1. Load pre-trained weights from HuggingFace.
+2. Replace classifier head with custom 7-class head.
+3. Optionally freeze backbone for initial training.
+4. Use different learning rates for backbone vs classifier.
+5. Apply cosine scheduler with warmup.
+6. Gradually unfreeze layers if needed.
 
 ___ 
 
