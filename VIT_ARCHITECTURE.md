@@ -183,7 +183,8 @@ Memory Optimisation:
 5. Apply cosine scheduler with warmup.
 6. Gradually unfreeze layers if needed.
 
-___ 
+
+
 
 # Contributors
 - Fiorella Scarpino (21010043)
