@@ -187,6 +187,6 @@ ___
 ___ 
 
 # Contributors
-- Fiorella Scarpino (QA Testing & Validation, Developer)
-- May Sanejo (Developer)
-- Soumia Kouadri (Research & Review)
+- Fiorella Scarpino (21010043)
+- May Sanejo (15006280)
+- Soumia Kouadri (24058628)

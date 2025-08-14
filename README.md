@@ -14,6 +14,7 @@
 # Overview
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
 
+The complete architecture of the Vision Transformer can be found in [VIT_ARCHITECTURE.md](https://gitlab.uwe.ac.uk/lmr2-sanejo/group-4-dissertation/-/blob/feature4/vit_model/VIT_ARCHITECTURE.md?ref_type=heads)
 
 ## Features
 - **Multi-modal Support**: RGB-only, Thermal-only, and Combined (RGB+Thermal) modes
@@ -133,7 +134,6 @@ config = {
 ```
 
 ### Training Commands
-Ongoing..
 This is where you run the training by executing the following command
 
 ### Individual
@@ -214,7 +214,6 @@ python model.py
 nvidia-smi
 ```
 
-___
 
 ## Run to Google Collab
 
@@ -222,15 +221,15 @@ Follow this Step by Steps Instruction
 
 Step 1: Upload the source code from here to your Google Drive (Do not zipped source code)
 
-Step 2: Upload Data.zip to your working directory
+Step 2: Upload ```Data.zip``` to your working directory
 
-Step 3: Locate Main_Collab_ViT.ipynb from your working directory
+Step 3: Locate ```Main_Collab_ViT.ipynb``` from your working directory
 ```
 1. Go to Collab, create new notebook 
 2. Select File -> Locate in Drive -> Then find Google directory where you save all your source code
 3. Select Main_Collab_ViT.ipynb from your Google Drive folder to open
 ```
-Step 4: Select GPU runtime (T4 GPU only available on Collab Pro subscription)
+Step 4: Select GPU runtime (A100 GPU only available on Collab Pro subscription)
 ```
 Click runtime → change runtime type → Click to T4 GPU → Save
 ```
@@ -244,7 +243,6 @@ Once everything successfully runs, save a copy of the notebook.
 
 All the training results are in the ```experiments``` folder
 
-___ 
 
 # Authors
 - Fiorella Scarpino (21010043)
