@@ -18,6 +18,23 @@ ___
 ### Overview
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
 
+### Fusion Strategies
+
+#### Early Fusion
+- **Input-level fusion**: Concatenates RGB and Thermal images
+- **Architecture**: Single ViT encoder processes fused input
+- **Best for**: Learning joint representations from the start
+
+#### Late Fusion
+- **Feature/Prediction-level fusion**: Separate ViT encoders for each modality
+- **Architecture**: Two ViT encoders + fusion layer
+- **Best for**: Learning modality-specific features first
+
+### Fusion Types
+- **Concatenation**: `torch.cat([rgb_features, thermal_features], dim=1)`
+- **Addition**: `rgb_features + thermal_features`
+- **Attention**: Multi-head attention mechanism for feature weighting
+
 
 # Single Modal ViT (ViTForFER)
  Architecture Overview

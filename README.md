@@ -158,25 +158,6 @@ python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 
 python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 'late'
 ```
 
-
-### Fusion Strategies
-
-#### Early Fusion
-- **Input-level fusion**: Concatenates RGB and Thermal images
-- **Architecture**: Single ViT encoder processes fused input
-- **Best for**: Learning joint representations from the start
-
-#### Late Fusion
-- **Feature/Prediction-level fusion**: Separate ViT encoders for each modality
-- **Architecture**: Two ViT encoders + fusion layer
-- **Best for**: Learning modality-specific features first
-
-### Fusion Types
-- **Concatenation**: `torch.cat([rgb_features, thermal_features], dim=1)`
-- **Addition**: `rgb_features + thermal_features`
-- **Attention**: Multi-head attention mechanism for feature weighting
-
-
 ## Configuration Options
 
 ### Model Parameters
