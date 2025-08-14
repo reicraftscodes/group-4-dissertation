@@ -43,7 +43,7 @@ The complete architecture of the Vision Transformer can be found in [VIT_ARCHITE
 - Surprised
 
 ### Data Structure
-Your dataset should be organised as follows:
+The dataset should be organised as follows:
 ```
 Data/
     RGB/
@@ -56,7 +56,7 @@ Data/
         T_Angry_2_KTFE.jpg
         T_Disgust_1_KTFE.jpg
         ...
-    augmented/ (optional)
+    augmented/ 
         RGB/
             aug_R_Angry_1_KTFE.jpg
             ...
