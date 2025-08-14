@@ -12,7 +12,7 @@
 
 
 # Overview
-A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
+A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Multimodal (RGB+Thermal) modalities with multiple fusion strategies.
 
 The complete architecture of the Vision Transformer can be found in [VIT_ARCHITECTURE.md](https://gitlab.uwe.ac.uk/lmr2-sanejo/group-4-dissertation/-/blob/feature4/vit_model/VIT_ARCHITECTURE.md?ref_type=heads)
 
@@ -39,7 +39,7 @@ The complete architecture of the Vision Transformer can be found in [VIT_ARCHITE
 - Surprised
 
 ### Data Structure
-Your dataset should be organized as follows:
+Your dataset should be organised as follows:
 ```
 Data/
     RGB/
@@ -134,10 +134,10 @@ config = {
 ```
 
 ### Training Commands
-This is where you run the training by executing the following command
+This is where you run the training by executing the following command.
 
-### Individual
-#### RGB-only Mode
+### Single Modality
+ RGB-only Mode
 ```bash
 python train.py  # Set config['mode'] = 'rgb'
 ```
@@ -147,13 +147,13 @@ python train.py  # Set config['mode'] = 'rgb'
 python train.py  # Set config['mode'] = 'thermal'
 ```
 
-### Combined Mode
-#### Combined Mode with Early Fusion
+### Multimodal Mode
+Combined Mode with **Early Fusion**
 ```bash
 python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 'early'
 ```
 
-#### Combined Mode with Late Fusion
+Combined Mode with Late **Fusion**
 ```bash
 python train.py  # Set config['mode'] = 'combined', config['fusion_strategy'] = 'late'
 ```
@@ -219,29 +219,33 @@ nvidia-smi
 
 Follow this Step by Steps Instruction
 
-Step 1: Upload the source code from here to your Google Drive (Do not zipped source code)
+1. Upload the source code from here to your Google Drive (Do not zipped source code)
 
-Step 2: Upload ```Data.zip``` to your working directory
 
-Step 3: Locate ```Main_Collab_ViT.ipynb``` from your working directory
+2. Upload ```Data.zip``` to your working directory
+
+
+3. Locate ```Main_Collab_ViT.ipynb``` from your working directory
 ```
 1. Go to Collab, create new notebook 
 2. Select File -> Locate in Drive -> Then find Google directory where you save all your source code
 3. Select Main_Collab_ViT.ipynb from your Google Drive folder to open
 ```
-Step 4: Select GPU runtime (A100 GPU only available on Collab Pro subscription)
+
+5. Select GPU runtime (A100 GPU only available on Collab Pro subscription)
 ```
 Click runtime → change runtime type → Click to T4 GPU → Save
 ```
-Step 5: Run Code block
+5. Run Code block
 
-Before running each code block, please do make sure to edit the config first from main() to customise training parameters.
+    Before running each code block, please do make sure to edit the config first from main() to customise training parameters.
 
-Step 6: Getting all results
 
-Once everything successfully runs, save a copy of the notebook. 
+6. Getting all results
 
-All the training results are in the ```experiments``` folder
+    Once everything successfully runs, save a copy of the notebook.
+
+    All the training results are in the ```experiments``` folder.
 
 
 # Authors
