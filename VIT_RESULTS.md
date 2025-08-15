@@ -4,19 +4,20 @@ Here is the collection of ViT results for FER.
 
 
 ### Table of Contents 
-- [RGB Modality](#rgb-modality) 
+- [RGB Modality](#rgb-modality)
+  - [Training Time](#thermal-training-time) 
   - [Training history](#rgb-training-history)
   - [Classification report](#rgb-classification-report)
   - [Confusion Matrix](#rgb-confusion-matrix)
   - [Per-class metrics](#rgb-per-class-metrics)
-  - [Training Time](#rgb-training-time) 
 
 - [Thermal Modality](#thermal-modality)
+  - [Training Time](#thermal-training-time) 
   - [Training history](#thermal-training-history)
   - [Classification report](#thermal-classification-report)
   - [Confusion Matrix](#thermal-confusion-matrix)
   - [Per-class metrics](#thermal-per-class-metrics)
-  - [Training Time](#thermal-training-time) 
+
 
 ## RGB Modality
 
@@ -37,6 +38,9 @@ Here is the collection of ViT results for FER.
 
 ## Thermal Modality
 
+
+#### Thermal Training Time
+<img src="evaluation_results/Thermal/30Ep_training_thermal/multimodal_vit_fer_thermal_20250810_094359/thermal_training_time.png">
 #### Thermal Training History
 <img src="evaluation_results/Thermal/30Ep_training_thermal/multimodal_vit_fer_thermal_20250810_094359/training_history.png">
 
@@ -48,7 +52,3 @@ Here is the collection of ViT results for FER.
 
 #### Thermal Per-class metrics
 <img src="evaluation_results/Thermal/30Ep_training_thermal/multimodal_vit_fer_thermal_20250810_094359/per_class_metrics.png">
-
-
-#### Thermal Training Time
-<img src="evaluation_results/Thermal/30Ep_training_thermal/multimodal_vit_fer_thermal_20250810_094359/thermal_training_time.png">
