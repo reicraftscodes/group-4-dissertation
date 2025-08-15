@@ -5,16 +5,16 @@ Here is the collection of ViT results for FER.
 
 ### Table of Contents 
 - [RGB Modality](#rgb-modality) 
-  - [Training history](#training-history)
-  - [Classification report](#classification-report)
-  - [Confusion Matrix](#confusion-matrix)
-  - [Per-class metrics](#per-class-metrics) 
+  - [Training history](#rgb-training-history)
+  - [Classification report](#rgb-classification-report)
+  - [Confusion Matrix](#rgb-confusion-matrix)
+  - [Per-class metrics](#rgb-per-class-metrics) 
 
 - [Thermal Modality](#thermal-modality)
-  - [Training history](#training-history-1)
-  - [Classification report](#classification-report-1)
-  - [Confusion Matrix](#confusion-matrix-1)
-  - [Per-class metrics](#per-class-metrics-1)
+  - [Training history](#thermal-training-history)
+  - [Classification report](#thermal-classification-report)
+  - [Confusion Matrix](#thermal-confusion-matrix)
+  - [Per-class metrics](#thermal-per-class-metrics)
 
 ## RGB Modality
 

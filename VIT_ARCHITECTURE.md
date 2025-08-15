@@ -10,10 +10,8 @@
   - [Fusion Layer](#fusion-layer-details)
 - [How Fine-tuning Works](#how-fine-tuning-works-)
 - [Usage / Examples](#usageexamples)
-- [Results]()
+- [Training Results](#results)
 ___ 
-
-
 
 ### Overview
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
