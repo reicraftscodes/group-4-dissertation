@@ -5,7 +5,7 @@ Here is the collection of ViT results for FER.
 
 ### Table of Contents 
 - [RGB Modality](#rgb-modality)
-  - [Training Time](#thermal-training-time) 
+  - [Training Time](#rgb-training-time) 
   - [Training history](#rgb-training-history)
   - [Classification report](#rgb-classification-report)
   - [Confusion Matrix](#rgb-confusion-matrix)
@@ -21,6 +21,9 @@ Here is the collection of ViT results for FER.
 
 ## RGB Modality
 
+#### RGB Training Time
+<img src="evaluation_results/RGB/30Ep_training_rgb/multimodal_vit_fer_rgb_20250809_152007/rgb_training_time.png">
+
 #### RGB Training History
 <img src="evaluation_results/RGB/30Ep_training_rgb/multimodal_vit_fer_rgb_20250809_152007/training_history.png">
 
@@ -33,11 +36,9 @@ Here is the collection of ViT results for FER.
 #### RGB Per-class metrics
 <img src="evaluation_results/RGB/30Ep_training_rgb/multimodal_vit_fer_rgb_20250809_152007/per_class_metrics.png">
 
-#### RGB Training Time
-<img src="evaluation_results/RGB/30Ep_training_rgb/multimodal_vit_fer_rgb_20250809_152007/rgb_training_time.png">
+
 
 ## Thermal Modality
-
 
 #### Thermal Training Time
 <img src="evaluation_results/Thermal/30Ep_training_thermal/multimodal_vit_fer_thermal_20250810_094359/thermal_training_time.png">
