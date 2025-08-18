@@ -1,0 +1,42 @@
+2025-08-18 12:11:56,591 - INFO - Class weights: tensor([0.7496, 2.7661, 1.7584, 0.4927, 5.0860, 0.6816, 0.9594],
+       device='cuda:0')
+2025-08-18 12:11:56,865 - INFO - Trainer initialized. Experiment: multimodal_vit_fer_combined_20250818_121150
+2025-08-18 12:11:56,866 - INFO - Save directory: ./experiments/multimodal_vit_fer_combined_20250818_121150
+2025-08-18 12:11:56,867 - INFO - Training mode: combined
+2025-08-18 12:11:56,868 - INFO - Fusion strategy: early
+2025-08-18 12:11:56,868 - INFO - Fusion type: concat
+2025-08-18 12:11:56,869 - INFO - Fusion layer: 
+2025-08-18 12:11:56,870 - INFO - Training samples: 3,311
+2025-08-18 12:11:56,871 - INFO - Test samples: 828
+2025-08-18 12:11:56,872 - INFO - Use augmented data: True
+2025-08-18 12:11:56,873 - INFO - Training configuration: {
+  "data_dir": "Data",
+  "output_dir": "./experiments",
+  "mode": "combined",
+  "fusion_strategy": "early",
+  "fusion_type": "concat",
+  "fusion_layer": "",
+  "model_name": "google/vit-base-patch16-224-in21k",
+  "num_classes": 7,
+  "dropout_rate": 0.1,
+  "freeze_backbone": false,
+  "use_gradient_checkpointing": false,
+  "batch_size": 32,
+  "num_epochs": 30,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "warmup_steps": 500,
+  "gradient_clip_norm": 1.0,
+  "image_size": 224,
+  "num_workers": 4,
+  "val_split": 0.2,
+  "use_augmented": true,
+  "use_class_weights": true,
+  "early_stopping_patience": 10,
+  "early_stopping_min_delta": 0.001,
+  "use_wandb": false,
+  "wandb_project": "multimodal-fer"
+}
+2025-08-18 12:11:56,873 - INFO - Starting training for 30 epochs
+2025-08-18 12:11:56,874 - INFO - 
+=== Epoch 1/30 ===
