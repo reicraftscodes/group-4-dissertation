@@ -178,7 +178,7 @@ Memory Optimisation:
 
 
 ### Results
-All collected results per modalities can be found in [VIT_RESULTS.md](https://gitlab.uwe.ac.uk/lmr2-sanejo/group-4-dissertation/-/blob/feature4/vit_model/VIT_RESULTS.md?ref_type=heads)
+All collected results per modalities can be found in ```docs``` folder and look for [VIT_RESULTS.md](https://gitlab.uwe.ac.uk/lmr2-sanejo/group-4-dissertation/-/blob/feature4/vit_model/docs/VIT_RESULTS.md)
 
 # Contributors
 - Fiorella Scarpino (21010043)
