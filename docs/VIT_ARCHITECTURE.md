@@ -16,6 +16,8 @@ ___
 ### Overview
 A comprehensive implementation of Vision Transformer (ViT) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Combined (RGB+Thermal) modalities with multiple fusion strategies.
 
+Full detailed documentation can be found in Vision Transformers section in the [GitBook Documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs/model-documentation/vision-transformers-vit#architecture)
+
 ### Fusion Strategies
 
 #### Early Fusion
