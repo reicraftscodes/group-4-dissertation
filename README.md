@@ -1,57 +1,39 @@
 
-# Emotional Facial Recognition: ML Documentation
+# Multimodal Facial Emotion Recognition Using Deep Learning Models
+This dissertation project is a requirement for the completion of the Master’s in Artificial Intelligence degree at the University of the West of England, Bristol (UWE).
 
-# Contents
+The complete detailed documentation for this project can be found on [GitBook documentation](https://app.gitbook.com/o/mef1saoUznyWqCwZ2dJh/s/a2v4RsuXXAJZxUqoRJdu/)
 
-- [Set Up Instructions](#Set Up)
-- [How to run the project](#How to run the project)
-- [Libraries and Tools Used](#Libraries and Tools Used)
-- [Testing](#Testing)
-- [Authors](#Authors)
+## Project Overview
+This documentation covers the benchmarking of deep learning models for multimodal facial emotion recognition using RGB and thermal images. The objective is to compare model performance across different architectures and input modalities to improve the accuracy and reliability of emotion recognition systems.
 
-# Set Up
+
+## Set Up
 Before running the project, please make sure you have the following installed on your machine:
-- Pycharm
-- Python 3.9
+- Use an IDE of your choice, such as PyCharm or VS Code.
+- Python 3.9+
 
 Or you can run it through Google Colab
 
-# How to run the project
+##  How to run the project
 To start/run/compile the project please follow the steps below:
 
-### Step 1: Clone the repository
+**Step 1: Clone the repository**
 ```bash
   git clone https://gitlab.uwe.ac.uk/lmr2-sanejo/group-4-dissertation
 ```
-### Step 2: Open Notebook on your preferred environment Colab/PyCharm
-### Step 3: Run the code bloc manually
+**Step 2: Running the project**
+
+Check the **README** for how to run the model once you’ve checked out the branch and read further details in the [GitBook Documentation](https://app.gitbook.com/o/mef1saoUznyWqCwZ2dJh/s/a2v4RsuXXAJZxUqoRJdu/)
+
+Branch name
+
+- ```feature4/vit_model```: Vision Transformer implementations can be found on branch.
+- ```Mamba``` : Vision Mamba implementations can be found on branch.
+-  ```CNN```: Vision Mamba implementations can be found on branch.
 
 
-# Libraries and Tools Used
-
-
----
-- Pandas – Used for data manipulation and analysis. Essential for reading and transforming structured datasets such as CSVs for facial emotion labels and features.
-- NumPy– Provides support for numerical operations, especially with arrays and matrices. It is heavily used for preprocessing image data and handling numerical computations in deep learning workflows.
-NumPy Documentation
-- Matplotlib – A 2D plotting library used to visualize data distributions, model performance metrics (e.g., accuracy/loss graphs), and confusion matrices.
-- Seaborn– Built on top of matplotlib, it is used for enhanced data visualization. Helpful for producing attractive and informative statistical graphics such as heatmaps, pair plots, and correlation matrices.
-- Python – The core programming language used throughout the project for scripting, modeling, and evaluation.
-- Jupyter Notebook – Interactive environment for running experiments, visualizations, and documenting progress.
-
-
-# Testing
-
-
----
-Assert – Used to check that the data and functions work correctly during development. This helps catch errors early, such as mismatched shapes or incorrect values.
-
-# Deployment
-
-
----
-
-# Authors
+## Authors
 - Fiorella Scarpino (21010043)
 - May Sanejo (15006280)
 - Soumia Kouadri (24058628)
