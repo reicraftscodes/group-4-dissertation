@@ -1,9 +1,10 @@
 
 # ViT Results
-Here is the collection of ViT results for FER.
+Here is the collection of Vision Transformers results for FER.
 
 
 ### Table of Contents 
+Modalities Results
 - [RGB Modality](#rgb-modality)
   - [Training Time](#rgb-training-time) 
   - [Training history](#rgb-training-history)
@@ -18,6 +19,21 @@ Here is the collection of ViT results for FER.
   - [Confusion Matrix](#thermal-confusion-matrix)
   - [Per-class metrics](#thermal-per-class-metrics)
 
+- [Multimodal Early Fusion](#multi-modal-early-fusion-concat)
+  - [Training Time](#multi-modal-early-fusion-training-time) 
+  - [Training history](#multi-modal-early-fusion-training-history)
+  - [Classification report](#multi-modal-early-fusion-classification-report)
+  - [Confusion Matrix](#multi-modal-early-fusion-confusion-matrix)
+  - [Per-class metrics](#multi-modal-early-fusion-per-class-metrics)
+
+- [Multimodal Late Fusion](#multi-modal-late-fusion-attention-features)
+  - [Training Time](#multi-modal-late-fusion-training-time) 
+  - [Training history](#multi-modal-late-fusion-training-history)
+  - [Classification report](#multi-modal-late-fusion-classification-report)
+  - [Confusion Matrix](#multi-modal-late-fusion-confusion-matrix)
+  - [Per-class metrics](#multi-modal-late-fusion-per-class-metrics)
+
+___ 
 
 ## RGB Modality
 
@@ -57,7 +73,7 @@ Here is the collection of ViT results for FER.
 
 
 
-## Multi-modal Early Fusion (Concat)
+## Multi-modal Early Fusion (Concat)]
 
 #### Multi-modal Early Fusion Training Time
 <img src="evaluation_results/Combined_EarlyFusion/30Ep_training_early_fusion/multimodal_vit_fer_combined_20250821_104017/training_min_earlyfusion.png">
@@ -78,16 +94,16 @@ Here is the collection of ViT results for FER.
 ## Multi-modal Late Fusion (Attention, Features)
 
 #### Multi-modal Late Fusion Training Time
-<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250817_143339/training_min_latefusion.png">
+<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250824_124943/training_min_latefusion.png">
 
 #### Multi-modal Late Fusion Training History
-<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250817_143339/training_history.png">
+<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250824_124943/training_history.png">
 
 #### Multi-modal Late Fusion Classification Report
-<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250817_143339/combinedLate_classification_table.png">
+<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250824_124943/combinedLate_classification_table.png">
 
 #### Multi-modal Late Fusion Confusion Matrix
-<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250817_143339/confusion_matrix_normalized.png">
+<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250824_124943/confusion_matrix_normalized.png">
 
 #### Multi-modal Late Fusion Per-class metrics
-<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250817_143339/per_class_metrics.png">
+<img src="evaluation_results/Combined_LateFusion/30Ep_training_late_fusion/multimodal_vit_fer_combined_20250824_124943/per_class_metrics.png">
