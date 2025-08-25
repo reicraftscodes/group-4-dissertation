@@ -41,7 +41,8 @@ Full detailed documentation can be found in Vision Transformers section in the [
 - Architecture: 12 layers, 768 hidden size, 12 attention heads
 - Custom classifier: 2-layer MLP with LayerNorm and dropout
 - Input: 224x224 RGB or thermal images
- 
+
+<img src="evaluation_results/RGB/single_modal_archi.jpg" style="height:500px;">
 
 # Early Fusion ViT (EarlyFusionViT)
 - Combines RGB + thermal at input level
@@ -50,6 +51,8 @@ Full detailed documentation can be found in Vision Transformers section in the [
 - Modifies patch embedding layer for multi-channel input
 
 In Early Fusion, RGB and thermal images are merged before entering the ViT encoder. There are three common fusion types:
+
+<img src="evaluation_results/Combined_EarlyFusion/early_fusion_archi.jpg" style="width:470px;">
 
 ### Fusion Types
    - **Concat**  
@@ -80,6 +83,8 @@ In Early Fusion, RGB and thermal images are merged before entering the ViT encod
 
 
 - **Prediction Fusion**: Applies separate classifiers on each modality’s features, then combines the predictions (e.g., averaging or weighted sum).
+
+<img src="evaluation_results/Combined_LateFusion/late_fusion_archi.jpg"  style="width:470px;">
 
 
 ##  How Fine-tuning Works 
