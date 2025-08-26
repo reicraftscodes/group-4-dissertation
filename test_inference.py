@@ -16,7 +16,7 @@ def test_inference_examples():
     """Test inference with different scenarios"""
     
     # Path to your trained model
-    checkpoint_path = "./experiments/multimodal_vit_fer_rgb_20250706_000845/best_model.pth"
+    checkpoint_path = "./experiments/multimodal_vit_fer_rgb_20250822_145743/best_model.pth"
     
     # Check if checkpoint exists
     if not os.path.exists(checkpoint_path):
