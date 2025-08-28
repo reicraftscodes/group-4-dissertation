@@ -1,57 +1,80 @@
+# Data Processing
+The data processing code implementation is available in the Jupyter Notebook file ```Data_Processing.ipynb```
 
-# Emotional Facial Recognition: ML Documentation
+## Datasets Information
+Two datasets were used in this project - IRIS and KTFEv.2
 
-# Contents
+**- IRIS dataset** 
+  - Contains 4,228 pairs of thermal and RGB images. 
+  - Comprised of 30 individuals. 
+  - Each individual shows 3 emotions: surprised, laughing, angry. 
+  - Includes 5 illumination conditions with neutral facial expressions. 
+  - Available from [OTCBVS](https://vcipl-okstate.org/pbvs/bench/).
 
-- [Set Up Instructions](#Set Up)
-- [How to run the project](#How to run the project)
-- [Libraries and Tools Used](#Libraries and Tools Used)
-- [Testing](#Testing)
-- [Authors](#Authors)
+**- KTFEv.2 dataset**
+  - Contains 3,190 pairs of thermal and RGB images. 
+  - Comprised of 30 individuals. 
+  - Includes 7 emotions: surprise, happiness, anger, neutral, sadness, fear, disgust. 
+  - Available from [Kaggle](https://www.kaggle.com/datasets/nafisaislamrifa/facial-emotions-thermal-visual/data).
+  
+**Dataset Size**
+- RGB raw images: ```4,139```
+- Thermal raw images: ```4,139```
 
-# Set Up
-Before running the project, please make sure you have the following installed on your machine:
-- Pycharm
-- Python 3.9
 
-Or you can run it through Google Colab
-
-# How to run the project
-To start/run/compile the project please follow the steps below:
-
-### Step 1: Clone the repository
-```bash
-  git clone https://gitlab.uwe.ac.uk/lmr2-sanejo/group-4-dissertation
+## Data Structure
 ```
-### Step 2: Open Notebook on your preferred environment Colab/PyCharm
-### Step 3: Run the code bloc manually
+Data/
+    RGB/
+        R_Angry_1_KTFE.jpg
+        R_Angry_2_KTFE.jpg
+        R_Disgust_1_KTFE.jpg
+        ...
+    Thermal/
+        T_Angry_1_KTFE.jpg
+        T_Angry_2_KTFE.jpg
+        T_Disgust_1_KTFE.jpg
+        ...
+    augmented/ 
+        RGB/
+            aug_R_Angry_1_KTFE.jpg
+            ...
+        Thermal/
+            aug_T_Angry_1_KTFE.jpg
+            ...
+```
+
+File naming convention
+```
+`{modality}_{emotion}_{id}_{suffix}.jpg`
+- `modality`: R (RGB) or T (Thermal)
+- `emotion`: Angry, Disgust, Fear, Happy, Neutral, Sad, Surprised
+- `id`: Unique identifier
+- `suffix`: Additional identifier (e.g., KTFE)
+```
+- Each RGB image has a corresponding thermal image with the same unique number. 
+- Augmented images use the aug_ suffix.
+
+## Data Processing
+- Only images containing emotions are used : Angry, Disgust,Fear, Happy, Neutral, Sad, Surprised
+- Resized to 224×224 pixels for model input.
 
 
-# Libraries and Tools Used
-Link to the cleaned dataset: https://drive.google.com/drive/folders/1PSx9IZnoQXjx7HUyEyrnRJ9j_BDRoexr?usp=sharing
-
----
-- Pandas – Used for data manipulation and analysis. Essential for reading and transforming structured datasets such as CSVs for facial emotion labels and features.
-- NumPy– Provides support for numerical operations, especially with arrays and matrices. It is heavily used for preprocessing image data and handling numerical computations in deep learning workflows.
-NumPy Documentation
-- Matplotlib – A 2D plotting library used to visualize data distributions, model performance metrics (e.g., accuracy/loss graphs), and confusion matrices.
-- Seaborn– Built on top of matplotlib, it is used for enhanced data visualization. Helpful for producing attractive and informative statistical graphics such as heatmaps, pair plots, and correlation matrices.
-- Python – The core programming language used throughout the project for scripting, modeling, and evaluation.
-- Jupyter Notebook – Interactive environment for running experiments, visualizations, and documenting progress.
+## Data Augmentation
+The dataset was enhanced using three core offline augmentation stages applied prior to training. 
+1. ```Horizontal Flip``` – randomly flips images horizontally.
+2. ```Rotation ±15°``` – rotates images within a ±15-degree range.
+3. ```CLAHE``` (Contrast Limited Adaptive Histogram Equalization) – improves local contrast with a clip limit of 5.
 
 
-# Testing
+The output of these augmentations resulted in the following dataset sizes:
+- RGB Augmented Images: ```16,556```
+- Thermal Augmented Images: ```16,556```
 
+These augmented images were then used as the base dataset for all models, ensuring consistent training data across architectures.
 
----
-Assert – Used to check that the data and functions work correctly during development. This helps catch errors early, such as mismatched shapes or incorrect values.
-
-# Deployment
-
-
----
 
 # Authors
-- Fiorella Scarpino (21010043)
-- May Sanejo (15006280)
-- Soumia Kouadri (24058628)
+- Fiorella Scarpino (21010043), University of the West of England (UWE)
+- May Sanejo (15006280), University of the West of England (UWE)
+- Soumia Kouadri (24058628), University of the West of England (UWE)
