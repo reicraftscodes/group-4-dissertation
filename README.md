@@ -33,8 +33,7 @@ The code implementations can be found in the following GitLab branches.
 
 **Models**
 - ```feature4/vit_model```: Vision Transformer implementations can be found on branch.
-- ```Mamba``` : Vision Mamba implementations can be found on branch.
-- ```CNN```: Vision Mamba implementations can be found on branch.
+- ```CNN_Model```: CNN implementations can be found on branch.
 
 ### Step 3: Running the project
 Check the **README.md** for how to run the model once you’ve checked out the branch and read further details in the [GitBook Documentation](https://app.gitbook.com/o/mef1saoUznyWqCwZ2dJh/s/a2v4RsuXXAJZxUqoRJdu/)
