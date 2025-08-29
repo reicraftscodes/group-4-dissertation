@@ -76,7 +76,7 @@ These augmented images were then used as the base dataset for all models, ensuri
 
 ## CNN Model
 
-**To run file**
+**To run CNN_Final file**
 1. If running on Google Colab: run all cells under ```1.1 Setup for Colab``` ensuring that code cell 2 is changed to personal path 
 2. Ensure that Data file is in the same directory as the ```CNN Final``` notebook
 3. Uncomment code cell 4 to run the requirements file
