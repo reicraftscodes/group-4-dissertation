@@ -74,6 +74,20 @@ The output of these augmentations resulted in the following dataset sizes:
 These augmented images were then used as the base dataset for all models, ensuring consistent training data across architectures.
 
 
+## CNN Model
+
+**To run file**
+1. If running on Google Colab: run all cells under ```1.1 Setup for Colab``` ensuring that code cell 2 is changed to personal path 
+2. Ensure that Data file is in the same directory as the ```CNN Final``` notebook
+3. Uncomment code cell 4 to run the requirements file
+4. Change the ```modalDir``` variable under the ```loadDataSingleModality``` function to either ```rgbDir``` or ```thermalDir``` depending on which modality needs to be trained
+5. Run notebook as normal
+
+**To view results**
+- Results can be viewed in notebook after running
+- Results are also saved as csv files and images, in a folder called ```trainingResults```, with each result file having the suffix ```RGB``` or ```Thermal``` depending on which modality tested
+
+
 # Authors
 - Fiorella Scarpino (21010043), University of the West of England (UWE)
 - May Sanejo (15006280), University of the West of England (UWE)
