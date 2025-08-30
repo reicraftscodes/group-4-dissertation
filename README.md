@@ -1,28 +1,28 @@
-# Data Processing
-The data processing code implementation is available in the Jupyter Notebook file ```Data_Processing.ipynb```
+# Convolutional Neural Network (CNN) for Facial Expression Recognition (FER) Documentation
 
-## Datasets Information
-Two datasets were used in this project - IRIS and KTFEv.2
+### Table of Contents
+- [Overview](#overview)
+- [Datasets](#dataset)
+- [Run Google Collab](#run-to-google-collab)
+  - [Single Modality](#single-modality)
+  - [Multimodal Early Fusion](#multimodal-early-fusion)
+- [Results](#results)
 
-**- IRIS dataset** 
-  - Contains 4,228 pairs of thermal and RGB images. 
-  - Comprised of 30 individuals. 
-  - Each individual shows 3 emotions: surprised, laughing, angry. 
-  - Includes 5 illumination conditions with neutral facial expressions. 
-  - Available from [OTCBVS](https://vcipl-okstate.org/pbvs/bench/).
+# Overview
+A comprehensive implementation of Convolutional Neural Network (CNN) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Multimodal modalities
 
-**- KTFEv.2 dataset**
-  - Contains 3,190 pairs of thermal and RGB images. 
-  - Comprised of 30 individuals. 
-  - Includes 7 emotions: surprise, happiness, anger, neutral, sadness, fear, disgust. 
-  - Available from [Kaggle](https://www.kaggle.com/datasets/nafisaislamrifa/facial-emotions-thermal-visual/data).
-  
-**Dataset Size**
-- RGB raw images: ```4,139```
-- Thermal raw images: ```4,139```
-
+## Dataset
+### Supported Emotions
+- Angry
+- Disgust
+- Fear
+- Happy
+- Neutral
+- Sad
+- Surprised
 
 ## Data Structure
+The dataset should be organised as follows:
 ```
 Data/
     RGB/
@@ -52,38 +52,29 @@ File naming convention
 - `id`: Unique identifier
 - `suffix`: Additional identifier (e.g., KTFE)
 ```
-- Each RGB image has a corresponding thermal image with the same unique number. 
-- Augmented images use the aug_ suffix.
 
-## Data Processing
-- Only images containing emotions are used : Angry, Disgust,Fear, Happy, Neutral, Sad, Surprised
-- Resized to 224×224 pixels for model input.
+# Run to Google Collab
 
+### Single Modality
 
-## Data Augmentation
-The dataset was enhanced using three core offline augmentation stages applied prior to training. 
-1. ```Horizontal Flip``` – randomly flips images horizontally.
-2. ```Rotation ±15°``` – rotates images within a ±15-degree range.
-3. ```CLAHE``` (Contrast Limited Adaptive Histogram Equalization) – improves local contrast with a clip limit of 5.
+**To run CNN_Final.ipynb file**
 
-
-The output of these augmentations resulted in the following dataset sizes:
-- RGB Augmented Images: ```16,556```
-- Thermal Augmented Images: ```16,556```
-
-These augmented images were then used as the base dataset for all models, ensuring consistent training data across architectures.
-
-
-## CNN Model
-
-**To run CNN_Final file**
 1. If running on Google Colab: run all cells under ```1.1 Setup for Colab``` ensuring that code cell 2 is changed to personal path 
 2. Ensure that Data file is in the same directory as the ```CNN Final``` notebook
 3. Uncomment code cell 4 to run the requirements file
 4. Change the ```modalDir``` variable under the ```loadDataSingleModality``` function to either ```rgbDir``` or ```thermalDir``` depending on which modality needs to be trained
 5. Run notebook as normal
 
-**To view results**
+### Multimodal Early Fusion
+
+**To run the CNN_EarlyFusion_Concat_Final.ipynb file**
+1. If running on Google Colab: run all cells under ```1.1 Setup for Colab``` ensuring that code cell 2 is changed to personal path 
+2. Ensure that Data file is in the same directory as the ```CNN Final``` notebook 
+3. Uncomment code cell 4 to run the requirements file 
+4. Run notebook as normal
+
+### Results
+To view results, 
 - Results can be viewed in notebook after running
 - Results are also saved as csv files and images, in a folder called ```trainingResults```, with each result file having the suffix ```RGB``` or ```Thermal``` depending on which modality tested
 
