@@ -13,7 +13,7 @@
 - [Results](#results)
 
 # Overview
-A comprehensive implementation of a Convolutional Neural Network (CNN) for Facial Expression Recognition (FER), supporting RGB, thermal, and multimodal** inputs. This project uses a **pre-trained ShuffleNetV2** to train and evaluate multimodal data, providing a lightweight and efficient solution for low-end devices.
+A comprehensive implementation of a Convolutional Neural Network (CNN) for Facial Expression Recognition (FER), supporting RGB, thermal, and multimodal inputs. This project uses a **pre-trained ShuffleNetV2** to train and evaluate multimodal data, providing a lightweight and efficient solution for low-end devices.
 
 ## Dataset
 ### Supported Emotions
