@@ -1,5 +1,9 @@
 # Convolutional Neural Network (CNN) for Facial Expression Recognition (FER) Documentation
 
+<p style="text-align:center;">
+  <img src="cover/cover.png" alt="Cover Image" width="600"/>
+</p>
+
 ### Table of Contents
 - [Overview](#overview)
 - [Datasets](#dataset)
@@ -9,7 +13,7 @@
 - [Results](#results)
 
 # Overview
-A comprehensive implementation of Convolutional Neural Network (CNN) for Facial Expression Recognition (FER) supporting RGB, Thermal, and Multimodal modalities
+A comprehensive implementation of a Convolutional Neural Network (CNN) for Facial Expression Recognition (FER), supporting RGB, thermal, and multimodal** inputs. This project uses a **pre-trained ShuffleNetV2** to train and evaluate multimodal data, providing a lightweight and efficient solution for low-end devices.
 
 ## Dataset
 ### Supported Emotions
