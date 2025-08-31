@@ -9,10 +9,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 """
-    Author: May Sanejo
-    Description:  Model architectures (ViT, Early/Late Fusion).
-    
-    Some code adapted from Hugging Face Transformers ViT documentation:
+    References from Hugging Face Transformers ViT documentation:
     https://huggingface.co/docs/transformers/en/model_doc/vit
 """
 
@@ -54,7 +51,7 @@ class ViTForFER(nn.Module):
         }
         self.config.label2id = {v: k for k, v in self.config.id2label.items()}
         
-        # Initialize ViT model
+        # Initialise ViT model
         self.vit = ViTForImageClassification.from_pretrained(
             model_name,
             config=self.config,
@@ -138,7 +135,7 @@ class ViTForFER(nn.Module):
     
     def get_attention_weights(self, pixel_values: torch.Tensor, layer_idx: int = -1):
         """
-        Get attention weights for visualization
+        Get attention weights for visualisation
         
         Args:
             pixel_values: Input images tensor
