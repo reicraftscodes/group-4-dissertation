@@ -36,7 +36,7 @@ The code implementations can be found in the following GitLab branches.
 - ```CNN_Model```: CNN implementations can be found on branch.
 
 ### Step 3: Running the project
-Check the **README.md** for how to run the model once you’ve checked out the branch and read further details in the [GitBook Documentation](https://app.gitbook.com/o/mef1saoUznyWqCwZ2dJh/s/a2v4RsuXXAJZxUqoRJdu/)
+Check the **README.md** for how to run the model once you’ve checked out the branch and read further details in the [GitBook Documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs)
 
 
 ## License
