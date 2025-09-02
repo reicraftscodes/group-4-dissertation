@@ -2,7 +2,7 @@
 # Multimodal Facial Emotion Recognition Using Deep Learning Models
 This dissertation project is a requirement for the completion of the Master’s in Artificial Intelligence degree at the University of the West of England, Bristol (UWE).
 
-The complete detailed documentation for this project can be found on [GitBook documentation](https://app.gitbook.com/o/mef1saoUznyWqCwZ2dJh/s/a2v4RsuXXAJZxUqoRJdu/)
+The complete detailed documentation for this project can be found on [GitBook documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs)
 
 Start date: March 2025
 Completion date: September 2025
