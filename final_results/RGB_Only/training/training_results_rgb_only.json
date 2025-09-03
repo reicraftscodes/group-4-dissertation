@@ -1,0 +1,31 @@
+{
+  "modality": "rgb_only",
+  "training_time_seconds": 5720.895779132843,
+  "training_time_minutes": 95.34826298554738,
+  "config": {
+    "model_size": "n",
+    "num_classes": 7,
+    "modality": "rgb_only",
+    "fusion_type": "concatenate",
+    "batch_size": 16,
+    "epochs": 30,
+    "learning_rate": 0.01,
+    "input_size": 640,
+    "class_names": [
+      "happy",
+      "sad",
+      "angry",
+      "surprised",
+      "fearful",
+      "disgusted",
+      "neutral"
+    ],
+    "dataset_root": "/content/drive/MyDrive/data"
+  },
+  "timestamp": "2025-08-31T05:38:44.422398",
+  "precision": 0.9941427331342089,
+  "recall": 0.9888926554307137,
+  "mAP50": 0.9942191425142672,
+  "mAP50_95": 0.8972899315492392,
+  "model_path": "models/yolo11_rgb_only_20250831_053844.pt"
+}

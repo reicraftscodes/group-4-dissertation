@@ -1,0 +1,31 @@
+{
+  "modality": "thermal_only",
+  "training_time_seconds": 3443.6438431739807,
+  "training_time_minutes": 57.39406405289968,
+  "config": {
+    "model_size": "n",
+    "num_classes": 7,
+    "modality": "thermal_only",
+    "fusion_type": "concatenate",
+    "batch_size": 16,
+    "epochs": 30,
+    "learning_rate": 0.01,
+    "input_size": 640,
+    "class_names": [
+      "happy",
+      "sad",
+      "angry",
+      "surprised",
+      "fearful",
+      "disgusted",
+      "neutral"
+    ],
+    "dataset_root": "/content/drive/MyDrive/data"
+  },
+  "timestamp": "2025-08-31T18:38:04.230169",
+  "precision": 0.8785495264438531,
+  "recall": 0.8895632685448893,
+  "mAP50": 0.9402477870737991,
+  "mAP50_95": 0.7448390668253865,
+  "model_path": "models/yolo11_thermal_only_20250831_183804.pt"
+}
