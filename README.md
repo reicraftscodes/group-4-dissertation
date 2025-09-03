@@ -15,29 +15,14 @@
 - [Dataset Format & Conversion](#dataset-format--conversion)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
-- [Multimodal Support](#multimodal-support)
-- [Training](#training)
 - [Evaluation](#evaluation)
-- [Inference](#inference)
-- [Configuration](#configuration)
-- [Results & Visualization](#results--visualization)
-- [Performance Benchmarks](#performance-benchmarks)
-- [Troubleshooting](#troubleshooting)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
+- [Authors](#authors)
 
 ## Overview
 
 This project implements a **real YOLO11-based facial emotion detection system** that can detects faces and then classify emotions. It supports signle modalities (RGB only, Themal only) and multiple modalities (Early Fusion, Late Fusion). Unlike traditional emotion classification approaches that assume pre-cropped face images, this implementation works on **uncropped images** and can detect multiple faces simultaneously, making it suitable for real-world applications.
 
-### Supported Emotions
-- **Angry** 😠
-- **Disgusted** 🤢  
-- **Fearful** 😨
-- **Happy** 😊
-- **Neutral** 😐
-- **Sad** 😢
-- **Surprised** 😲
 
 ## Features
 
