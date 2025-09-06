@@ -3,8 +3,8 @@
 2025-08-22 14:58:26,344 - INFO - Trainer initialized. Experiment: multimodal_vit_fer_rgb_20250822_145743
 2025-08-22 14:58:26,345 - INFO - Save directory: ./experiments/multimodal_vit_fer_rgb_20250822_145743
 2025-08-22 14:58:26,347 - INFO - Training mode: rgb
-2025-08-22 14:58:26,348 - INFO - Training samples: 15,429
-2025-08-22 14:58:26,349 - INFO - Test samples: 3,858
+2025-08-22 14:58:26,348 - INFO - Training samples: 16,556
+2025-08-22 14:58:26,349 - INFO - Test samples: 4,139
 2025-08-22 14:58:26,350 - INFO - Use augmented data: True
 2025-08-22 14:58:26,351 - INFO - Training configuration: {
   "data_dir": "Data",
@@ -195,17 +195,17 @@
 2025-08-22 18:04:10,343 - INFO - Val   - Loss: 0.0796, Acc: 0.9728, F1: 0.9728, Precision: 0.9730, Recall: 0.9728
 2025-08-22 18:04:13,043 - INFO - Checkpoint saved: ./experiments/multimodal_vit_fer_rgb_20250822_145743/last_model.pth
 2025-08-22 18:04:18,655 - INFO - === DETAILED EVALUATION RESULTS ===
-2025-08-22 18:04:18,656 - INFO - Overall Accuracy: 0.9728
-2025-08-22 18:04:18,658 - INFO - Macro F1-Score: 0.9699
-2025-08-22 18:04:18,661 - INFO - Micro F1-Score: 0.9728
-2025-08-22 18:04:18,662 - INFO - Weighted F1-Score: 0.9728
+2025-08-22 18:04:18,656 - INFO - Overall Accuracy: 0.9778
+2025-08-22 18:04:18,658 - INFO - Macro F1-Score: 0.9702
+2025-08-22 18:04:18,661 - INFO - Micro F1-Score: 0.9778
+2025-08-22 18:04:18,662 - INFO - Weighted F1-Score: 0.9777
 2025-08-22 18:04:18,663 - INFO - Per-class Accuracy:
-2025-08-22 18:04:18,663 - INFO -   angry: 0.9812
-2025-08-22 18:04:18,664 - INFO -   disgust: 0.9912
-2025-08-22 18:04:18,665 - INFO -   fear: 0.9437
-2025-08-22 18:04:18,666 - INFO -   happy: 0.9669
-2025-08-22 18:04:18,667 - INFO -   neutral: 0.9307
-2025-08-22 18:04:18,669 - INFO -   sad: 0.9911
-2025-08-22 18:04:18,670 - INFO -   surprised: 0.9657
+2025-08-22 18:04:18,663 - INFO -   angry: 0.9854
+2025-08-22 18:04:18,664 - INFO -   disgust: 0.9310
+2025-08-22 18:04:18,665 - INFO -   fear: 0.9591
+2025-08-22 18:04:18,666 - INFO -   happy: 0.9896
+2025-08-22 18:04:18,667 - INFO -   neutral: 0.9011
+2025-08-22 18:04:18,669 - INFO -   sad: 0.9896
+2025-08-22 18:04:18,670 - INFO -   surprised: 0.9741
 2025-08-22 18:04:18,672 - INFO - Final evaluation completed with comprehensive metrics
 2025-08-22 18:04:21,874 - INFO - Training completed!
