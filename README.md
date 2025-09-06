@@ -33,6 +33,7 @@ The code implementations can be found in the following GitLab branches.
 
 **Models**
 - ```feature4/vit_model```: Vision Transformer implementations can be found on branch.
+- ```YOLO11```: Yolo11 implementations can be found on branch.
 - ```CNN_Model```: CNN implementations can be found on branch.
 
 ### Step 3: Running the project
