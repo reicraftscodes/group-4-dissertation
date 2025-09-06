@@ -4,8 +4,8 @@ This dissertation project is a requirement for the completion of the Master’s 
 
 The complete detailed documentation for this project can be found on [GitBook documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs)
 
-Start date: March 2025
-Completion date: September 2025
+- **Start date**: March 2025
+- **Completion date**: September 2025
 
 ## Project Overview
 This documentation covers the benchmarking of deep learning models for multimodal facial emotion recognition using RGB and thermal images. The objective is to compare model performance across different architectures and input modalities to improve the accuracy and reliability of emotion recognition systems.
@@ -43,7 +43,9 @@ Check the **README.md** for how to run the model once you’ve checked out the b
 ## License
 This repository was created as part of dissertation project completion at the University of the West of England (UWE).
 
-The code is provided for academic purposes only and may not be used for commercial applications. All rights reserved by the authors and UWE.
+The code is provided for academic purposes only and may not be used for commercial applications. 
+
+All rights reserved by the authors and UWE.
 
 ## Authors
 - Fiorella Scarpino (21010043), University of the West of England (UWE)
