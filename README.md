@@ -83,6 +83,13 @@ To view results,
 - Results are also saved as csv files and images, in a folder called ```trainingResults```, with each result file having the suffix ```RGB``` or ```Thermal``` depending on which modality tested
 
 
+# License 
+This repository was created as part of dissertation project completion at the University of the West of England (UWE).
+
+The code is provided for academic purposes only and may not be used for commercial applications.
+
+All rights reserved by the authors and UWE.
+
 # Authors
 - Fiorella Scarpino (21010043), University of the West of England (UWE)
 - May Sanejo (15006280), University of the West of England (UWE)
