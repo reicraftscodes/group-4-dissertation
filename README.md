@@ -29,7 +29,7 @@ To run the project, please follow the steps outlined below.
 The code implementations can be found in the following GitLab branches.
 
 **Data augmentation**
-- ```FiBranch``` : Main branch for data preprocessing and augmentations.
+- ```data_processing``` : Main branch for data preprocessing and augmentations.
 
 **Models**
 - ```feature4/vit_model```: Vision Transformer implementations can be found on branch.
