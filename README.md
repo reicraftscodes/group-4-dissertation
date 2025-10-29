@@ -29,7 +29,7 @@ To run the project, please follow the steps outlined below.
 The code implementations can be found in the following GitLab branches.
 
 **Data augmentation**
-- ```data_processing``` : Main branch for data preprocessing and augmentations.
+- [data_processing](https://github.com/reicraftscodes/group-4-dissertation/tree/data_processing): Main branch for data preprocessing and augmentations.
 
 **Models**
 - [vit_model](https://github.com/reicraftscodes/group-4-dissertation/tree/feature4/vit_model): Vision Transformer implementations can be found on branch.
