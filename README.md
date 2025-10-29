@@ -32,7 +32,7 @@ The code implementations can be found in the following GitLab branches.
 - ```data_processing``` : Main branch for data preprocessing and augmentations.
 
 **Models**
-- ```feature4/vit_model```: Vision Transformer implementations can be found on branch.
+- ```[feature4/vit_model](https://github.com/reicraftscodes/group-4-dissertation/tree/feature4/vit_model)```: Vision Transformer implementations can be found on branch.
 - ```YOLO11```: Yolo11 implementations can be found on branch.
 - ```CNN_Model```: CNN implementations can be found on branch.
 
