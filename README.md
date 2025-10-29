@@ -7,7 +7,6 @@ The complete detailed documentation for this project can be found on [GitBook do
 ## Project Overview
 This documentation covers the benchmarking of deep learning models for multimodal facial emotion recognition using RGB and thermal images. The objective is to compare model performance across different architectures and input modalities to improve the accuracy and reliability of emotion recognition systems.
 
-### Timeline Overview
 | **Phase** | **Duration** | **Activities** |
 |------------|---------------|----------------|
 | **Proposal Submission** | **January – March 2025** | Develop and finalize project proposal, conduct initial background study, obtain approval. |
