@@ -4,8 +4,15 @@ This dissertation project is a requirement for the completion of the Master’s 
 
 The complete detailed documentation for this project can be found on [GitBook documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs) and paper can be found [here](https://uwe-dissertation-paper.lovable.app/?utm_source=lovable-editor)
 
-- **Start date**: March 2025
-- **Completion date**: September 2025
+
+### Timeline Overview
+| **Phase** | **Duration** | **Activities** |
+|------------|---------------|----------------|
+| **Proposal Submission** | **January – March 2025** | Develop and finalize project proposal; conduct initial background study; obtain approval. |
+| **Research Gathering** | **March – May 2025** | Collect data and resources; review related literature; refine research objectives and methodology. |
+| **Development** | **May – August 2025** | Implement main project work; testing, analysis, and evaluation. |
+| **Paper Writing** | **August – September 2025** | Document results; compile findings; finalize research paper and presentation materials. |
+---
 
 ## Project Overview
 This documentation covers the benchmarking of deep learning models for multimodal facial emotion recognition using RGB and thermal images. The objective is to compare model performance across different architectures and input modalities to improve the accuracy and reliability of emotion recognition systems.
