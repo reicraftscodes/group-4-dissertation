@@ -32,9 +32,9 @@ The code implementations can be found in the following GitLab branches.
 - ```data_processing``` : Main branch for data preprocessing and augmentations.
 
 **Models**
-- ```[feature4/vit_model](https://github.com/reicraftscodes/group-4-dissertation/tree/feature4/vit_model)```: Vision Transformer implementations can be found on branch.
-- ```YOLO11```: Yolo11 implementations can be found on branch.
-- ```CNN_Model```: CNN implementations can be found on branch.
+- [vit_model](https://github.com/reicraftscodes/group-4-dissertation/tree/feature4/vit_model): Vision Transformer implementations can be found on branch.
+- [YOLO11](https://github.com/reicraftscodes/group-4-dissertation/tree/YOLO11): Yolo11 implementations can be found on branch.
+- [CNN_Model](https://github.com/reicraftscodes/group-4-dissertation/tree/CNN_Model): CNN implementations can be found on branch.
 
 ### Step 3: Running the project
 Check the **README.md** for how to run the model once you’ve checked out the branch and read further details in the [GitBook Documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs)
