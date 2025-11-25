@@ -2,7 +2,7 @@
 # Multimodal Facial Emotion Recognition Using Deep Learning Models
 This dissertation project is a requirement for the completion of the Master’s in Artificial Intelligence degree at the University of the West of England, Bristol (UWE).
 
-The complete detailed documentation for this project can be found on [GitBook documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs) and paper can be found [here](https://uwe-dissertation-paper.lovable.app/?utm_source=lovable-editor)
+The complete detailed documentation for this project can be found on [GitBook documentation](https://university-of-the-west-england.gitbook.io/university-of-the-west-england-docs) and paper available on [ResearchGate](https://www.researchgate.net/publication/397947792_Multimodal_Facial_Emotion_Recognition_Using_Deep_Learning_Models?fbclid=IwY2xjawOSlMxleHRuA2FlbQIxMABicmlkETBkNUFHSkJUYldJYmU4blpac3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHkkdfrhvf9lx4hupVlTKihl-W2fQ0jfPghjXPveWr4EOFg1T2zisW3aVHKI__aem_PKqghzxm1cGSJS_C8tdjPA)
 
 ## Project Overview
 This documentation covers the benchmarking of deep learning models for multimodal facial emotion recognition using RGB and thermal images. The objective is to compare model performance across different architectures and input modalities to improve the accuracy and reliability of emotion recognition systems.
