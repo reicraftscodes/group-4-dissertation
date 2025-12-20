@@ -9,10 +9,10 @@ This documentation covers the benchmarking of deep learning models for multimoda
 
 | **Phase** | **Duration** | **Activities** |
 |------------|---------------|----------------|
-| **Proposal Submission** | **January – March 2025** | Develop and finalize project proposal, conduct initial background study, obtain approval. |
+| **Proposal Submission** | **January – March 2025** | Develop and finalise project proposal, conduct initial background study, obtain approval. |
 | **Research Gathering** | **March – May 2025** | Collect data and resources; review related literature, refine research objectives and methodology. |
 | **Development** | **May – August 2025** | Implement main project work; testing, analysis, and evaluation. |
-| **Paper Writing** | **August – September 2025** | Document results; compile findings; finalize research paper and presentation materials. |
+| **Paper Writing** | **August – September 2025** | Document results; compile findings; finalise research paper and presentation materials. |
 ---
 
 ## Set Up
