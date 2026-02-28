@@ -1,7 +1,20 @@
 # Vision Transformer (ViT) for Facial Expression Recognition (FER) Documentation
-
-<p style="text-align:center;">
-  <img src="cover/cover.png" alt="Cover Image" width="600"/>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python" alt="Python"/>
+  <img src="https://img.shields.io/badge/PyTorch-2.0+-red?style=for-the-badge&logo=pytorch" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/Torchvision-0.15+-brightgreen?style=for-the-badge" alt="Torchvision"/>
+  <img src="https://img.shields.io/badge/Transformers-4.30+-yellow?style=for-the-badge&logo=huggingface" alt="Transformers"/>
+  <img src="https://img.shields.io/badge/Accelerate-0.20+-blue?style=for-the-badge" alt="Accelerate"/>
+  <img src="https://img.shields.io/badge/Datasets-2.12+-orange?style=for-the-badge" alt="Datasets"/>
+  <img src="https://img.shields.io/badge/OpenCV-4.7+-lightgrey?style=for-the-badge&logo=opencv" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/NumPy-1.21+-blue?style=for-the-badge&logo=numpy" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/Pandas-1.5+-purple?style=for-the-badge&logo=pandas" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-1.0+-f7931e?style=for-the-badge&logo=scikitlearn" alt="Scikit-Learn"/>
+  <img src="https://img.shields.io/badge/Matplotlib-3.5+-black?style=for-the-badge" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Seaborn-0.11+-teal?style=for-the-badge" alt="Seaborn"/>
+  <img src="https://img.shields.io/badge/TensorBoard-2.13+-ff6f00?style=for-the-badge&logo=tensorflow" alt="TensorBoard"/>
+  <img src="https://img.shields.io/badge/W&B-0.15+-yellow?style=for-the-badge&logo=weightsandbiases" alt="Weights & Biases"/>
+  <img src="https://img.shields.io/badge/TQDM-4.64+-brightgreen?style=for-the-badge" alt="TQDM"/>
 </p>
 
 ### Table of Contents
